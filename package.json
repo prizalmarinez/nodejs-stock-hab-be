@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-stock-hab-be",
+  "version": "1.0.0",
+  "description": "nodejs be",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prizalmarinez/nodejs-stock-hab-be.git"
+  },
+  "author": "priz almarinez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/prizalmarinez/nodejs-stock-hab-be/issues"
+  },
+  "homepage": "https://github.com/prizalmarinez/nodejs-stock-hab-be#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemon": "^2.0.2"
+  }
+}
