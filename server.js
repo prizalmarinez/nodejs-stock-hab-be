@@ -1,15 +1,14 @@
 const express = require('express');
 const path = require('path')
+const morgan = require('morgan')
 
 const app = express();
+app.use(morgan('dev'))
+// api routes
+const products = require("./api/routes/products");
 
 app.use(express.json())
-
-app.use((req, res, next) => {
-    res.status(200).json({
-        message: 'it works'
-    })
-})
+app.use('/api/v1/products', products)
 
 // serve static in prod
 if (process.env.NODE_ENV === 'production') {
